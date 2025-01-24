@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Explorer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js"></script>
+    <style>
+        .activity-card {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .activity-info {
+            flex: 1;
+        }
+        .heart-icon {
+            cursor: pointer;
+            font-size: 24px;
+            color: gray;
+        }
+        .heart-icon.liked {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="bottom-sec">
+            <div class="bottom-left">
+                <h1>Welcome to Local Explorer</h1>
+                <p>Where every adventure begins with YOU! Let's uncover the hidden gems and activities that suit your vibe perfectly</p>
+                <div class="btn-sec">
+                    <button id="suggest-activities-btn">Suggest Activities</button>
+                </div>
+                <div id="activity-suggestions"></div> 
+            </div>
+            <div class="bottom-right">
+                <div class="ball-circle">
+                    <div class="ball"></div>
+                </div>
+                <div class="main-circle"></div>
+                <div class="circle2">
+                    <img src="/static/images/circlelogo.png" alt=""/>
+                </div>
+                <div class="shot-circle">
+                    <img src="/static/images/shape.svg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
